@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar busyunit-email-service/target/busyunit-email-service-1.0.jar
