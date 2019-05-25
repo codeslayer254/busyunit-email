@@ -1,0 +1,13 @@
+{
+  "name": "busyunit-email",
+  "description": "Java Email Sender API with Docker",
+  "keywords": [
+    "mailsender",
+    "microservice",
+    "springboot"
+  ],
+  "website": "https://www.busyunit.com",
+  "repository": "https://github.com/codeSlayer254/busyunit-email.git",
+  "logo": "https://res.cloudinary.com/dpnxlc0jh/image/upload/v1558771815/busyunit_evp8ll.png",
+  "image": "heroku/java"
+}
