@@ -1,4 +1,3 @@
-[![Build Status][travis-badge]][travis-badge-url]
 
 Java Email Sender API with Docker
 ==================================
