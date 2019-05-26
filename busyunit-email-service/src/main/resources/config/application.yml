@@ -8,7 +8,7 @@ spring:
     default-encoding: UTF-8
     host: smtp.gmail.com
     username: kenyahighcom@gmail.com
-    password: khc_2030
+    password: Welcome@01!
     port: 587
     properties:
       mail:
