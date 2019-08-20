@@ -17,7 +17,6 @@
     </style>
 </head>
 <body style="margin: 0; padding: 0;">
-    <p>${message}</p>
     <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
         <tr>
             <td bgcolor="#eaeaea" style="padding: 40px 30px 40px 30px;">
@@ -27,6 +26,9 @@
                          href="https://docs.google.com/forms/d/e/1FAIpQLScLOiOJhASyX-1CfgyYBGC9ZYiqTm7EVsU7-1BOpm3qsj0lrw/viewform?c=0&w=1" target="_blank"/>
                 </p>
             </td>
+        </tr>
+        <tr>
+            <td><p>${message}</p></td>
         </tr>
         <tr>
             <td bgcolor="#000000" style="padding: 30px 30px 30px 30px; color: white">

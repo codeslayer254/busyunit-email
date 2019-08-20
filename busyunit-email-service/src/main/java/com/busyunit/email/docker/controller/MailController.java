@@ -39,13 +39,21 @@ public class MailController {
 
     public static final String MAIL_URL = "/mail";
 
-    @ApiOperation(value = "Send an e-mail.", notes = "Requires a mail sender, receiver, message.", response = MailResponse.class)
-    @ApiResponses({@ApiResponse(code = 200, response = Override.class, message = "Override override sent successfully")})
-    @RequestMapping(method = RequestMethod.POST, value = MAIL_URL, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+
+    @ApiOperation(value = "Send an e-mail.",
+            notes = "Requires a mail sender, receiver, message.",
+            response = MailResponse.class)
+    @ApiResponses({@ApiResponse(code = 200,
+            response = Override.class,
+            message = "Override override sent successfully")})
+    @RequestMapping(method = RequestMethod.POST,
+            value = MAIL_URL,
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<MailResponse> sendEmail(@RequestBody EmbassyMessage embassyMessage) throws MessagingException, IOException, TemplateException {
 
         log.info("Email message sender address :{} Name:{}", embassyMessage.getSenderEmail(), embassyMessage.getSenderName());
-
+    
         MailResponse mailResponse = mailService.sendEmbassyMessage(embassyMessage);
         return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(mailResponse);
     }
